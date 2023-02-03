@@ -32,9 +32,9 @@ while month!=12:
             #print("days: %d" % (days))
             file.write("{-------------------------------[   %d.%s.%d   ]-------------------------------\n" % (year, monthtext, days))
             for x in range(3):
-                file.write("{---\n")
+                file.write("{\t\n")
                 file.write("\t\n")
-                file.write("---}\n")
+                file.write("-}\n")
             file.write("--------------------------------------------------------------------------------}\n")
             
             ### File close ###
