@@ -1,9 +1,14 @@
+### TODO Generator ###
+#
+#   Generate TODO text files each month,  
+#   in file each day generating Tasks (on weekend 1 task)
+#
 ### Library ###
 from calendar import monthrange
 from datetime import datetime
 from pathlib import Path
 
-### Data ###
+### Changed Data ###
 year = 2023
 pathfolder = "C:/Media/dev/python/ToDoFileGen/TODO/"
 
@@ -48,8 +53,9 @@ while month!=12:
             #print(weekday)
             file.write("{-------------------------------[   %s.%s.%s   ]-------------------------------\n" % (yeartext, monthtext, daytext))
             if weekday < 5:
-                for x in range(3):
+                for x in range(5):
                     file.write("{\t\n")
+                    file.write("\t\n")
                     file.write("\t\n")
                     file.write("-}\n")
                     #print("WorkDay")
